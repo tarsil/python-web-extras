@@ -44,7 +44,7 @@ app = FastAPI(__name__)
 
 app.add_exception_handler(RequestValidationError, http422_error_handler)
 
-    ```
+```
 
 ## Working example
 
