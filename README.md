@@ -13,7 +13,7 @@
   - [About Python Web Extras](#about-python-web-extras)
   - [Tortoise ORM](#tortoise-orm)
     - [Overview](#overview)
-      - [Supported Django and Python Versions](#supported-django-and-python-versions)
+      - [Supported Python Versions](#supported-django-and-python-versions)
     - [Installation](#installation)
   - [Documentation and Support](#documentation-and-support)
   - [License](#license)
