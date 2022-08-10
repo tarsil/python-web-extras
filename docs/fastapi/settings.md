@@ -43,4 +43,4 @@ class Settings(APISettings):
 the use of a `get_settings()` using `lru_cache()` and this way it would
 be simpler to load your enviroment settings in different ways.
 
-A full example is available [here](https://tarsil.github.io/python-web-extras/tests/fastapi/src/core/configs/settings.py).
+A full example is available [here](https://github.com/tarsil/cookiecutter-fastapi/blob/main/%7B%7B%20cookiecutter.project_root_name%20%7D%7D/%7B%7B%20cookiecutter.project_src_name%20%7D%7D/core/configs/settings.py).
