@@ -7,6 +7,11 @@ sensitive user information in the database.
 
 ## Table of Contents
 
+1. [API Settings](#api-settings)
+2. [Defaults](#defaults)
+3. [Custom Hashing](#custom-hashing)
+4. [Considerations](#considerations)
+
 ---
 
 ## API Settings

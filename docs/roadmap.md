@@ -33,3 +33,7 @@ Q4 of 2022/Q1 of 2023
 ## Starlette
 
 Q4 of 2022/Q1 of 2023
+
+## Documentation
+
+Add more examples to the docs soon.
