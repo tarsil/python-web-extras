@@ -1,8 +1,8 @@
 # Python Web Extras
 
-[![Build and Publish](https://github.com/tarsil/python_web_extras/actions/workflows/main.yml/badge.svg)]((https://github.com/tarsil/python_web_extras/actions/workflows/main.yml/badge.svg))
+[![Build and Publish](https://github.com/tarsil/python-web-extras/actions/workflows/main.yml/badge.svg)]((https://github.com/tarsil/python-web-extras/actions/workflows/main.yml/badge.svg))
 
-**Official Documentation** - <https://tarsil.github.io/python_web_extras/>
+**Official Documentation** - <https://tarsil.github.io/python-web-extras/>
 
 ---
 
