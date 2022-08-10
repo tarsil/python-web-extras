@@ -1,0 +1,62 @@
+name: Build and Publish
+
+on:
+  push:
+    branches:
+      - master
+      - develop
+      - main
+      - release/**
+      - fix/**
+      - hotfix/**
+      - feature/**
+jobs:
+  tests:
+    name: Python ${{ matrix.python-version }}
+    runs-on: ubuntu-20.04
+
+    strategy:
+      matrix:
+        python-version:
+          - "3.10"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set Python version
+        uses: actions/setup-python@v3
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: "pip"
+          cache-dependency-path: "requirements.txt"
+
+      - name: Install Project dependencies
+        run: |
+          pip install -r requirements.txt
+          python setup.py develop
+          pip install twine
+
+      - name: Run fastapi tests
+        run: |
+          python3 -m venv venv
+          source ./venv/bin/activate
+          python setup.py develop
+          cd tests/fastapi
+          pip install -r requirements/requirements-dev.txt
+          make test
+
+      - if: ${{ github.ref == 'refs/heads/main' && 'main' || github.ref == 'refs/heads/develop' && 'develop' }}
+        name: Install Python dependencies
+        run: pip install wheel twine mkdocs-material build
+
+      - if: ${{ github.ref == 'refs/heads/main' && 'main' || github.ref == 'refs/heads/develop' && 'develop' }}
+        name: Build Python package
+        run: python -m build
+
+      - if: ${{ github.ref == 'refs/heads/main' && 'main' || github.ref == 'refs/heads/develop' && 'develop' }}
+        name: Upload to pypi.
+        run: twine upload -u ${{ secrets.PYPI_USER }} -p ${{ secrets.PYPI_PASSWORD }} --skip-existing dist/*.whl
+
+      # - if: ${{ github.ref == 'refs/heads/main' && 'main' || github.ref == 'refs/heads/develop' && 'develop' }}
+      #   name: Upload to test pypi.
+      #   run: twine upload --repository-url https://test.pypi.org/legacy/ -u ${{ secrets.TEST_PYPI_USER }} -p ${{ secrets.TEST_PYPI_PASSWORD }} --skip-existing dist/*.whl

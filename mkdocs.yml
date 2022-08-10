@@ -1,0 +1,48 @@
+site_name: Python Web Extra
+site_description: Utils for python web frameworks (FastAPI, Quart...).
+
+repo_name: tarsil/python-web-extra
+repo_url: https://github.com/tarsil/python-web-extra
+edit_uri: ""
+
+theme:
+  name: material
+
+  palette:
+    # Toggle light mode
+    - scheme: default
+      primary: green
+      accent: amber
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+    # Toggle dark mode
+    - scheme: slate
+      primary: deep orange
+      accent: light green
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+
+nav:
+  - Introduction: "index.md"
+  - FastAPI:
+      - API Settings: "fastapi/settings.md"
+      - Conf Loader: "fastapi/conf.md"
+      - Logging: "fastapi/logging.md"
+      - Error Handing: "fastapi/errors.md"
+      - Tortoise ORM:
+          - Models: "fastapi/tortoise/models.md"
+          - Hashers: "fastapi/tortoise/hashers.md"
+  - Roadmap: "roadmap.md"
+  - Releases: "releases.md"

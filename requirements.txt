@@ -1,0 +1,8 @@
+django>=3.2.13
+fastapi>=0.79.0
+fastapi_utils>=0.2.1
+loguru>=0.6.0
+quart>=0.18.0
+passlib==1.7.4
+pytz==2022.1
+tortoise-orm>=0.19.2

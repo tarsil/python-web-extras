@@ -1,0 +1,13 @@
+aerich==0.6.3
+asyncpg==0.26.0
+databases==0.5.5
+fastapi[all]==0.79.0
+tortoise-orm[asyncpg]
+fastapi_utils==0.2.1
+loguru==0.6.0
+passlib==1.7.4
+postgres==4.0.0
+pytz==2022.1
+redis==4.0.2
+requests==2.28.1
+uvicorn>=0.12.0
