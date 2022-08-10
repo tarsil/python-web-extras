@@ -45,7 +45,7 @@ hashing are handled by simply inheriting from the base user model.
 
 ### Overview
 
-#### Supported Django and Python Versions
+#### Supported Python Versions
 
 | Python |
 | --------------- |

@@ -59,3 +59,6 @@ jobs:
       - if: ${{ github.ref == 'refs/heads/main' && 'main' || github.ref == 'refs/heads/develop' && 'develop' }}
         name: Upload to test pypi.
         run: twine upload --repository-url https://test.pypi.org/legacy/ -u ${{ secrets.TEST_PYPI_USER }} -p ${{ secrets.TEST_PYPI_PASSWORD }} --skip-existing dist/*.whl
+
+      - name: Upload docs.
+        run: mkdocs gh-deploy --force
