@@ -1,4 +1,4 @@
-site_name: Python Web Extra
+site_name: Python Web Extras
 site_description: Utils for python web frameworks (FastAPI, Quart...).
 
 repo_name: tarsil/python-web-extra

@@ -20,29 +20,29 @@ FastAPI application.
 
 **Example:**
 
-    ```python
-    from fastapi.exceptions import RequestValidationError
-    from starlette.exceptions import HTTPException
-    from python_web_extras.fastapi.errors.http_error import http_error_handler
+```python
+from fastapi.exceptions import RequestValidationError
+from starlette.exceptions import HTTPException
+from python_web_extras.fastapi.errors.http_error import http_error_handler
 
-    app = FastAPI(__name__)
+app = FastAPI(__name__)
 
-    app.add_exception_handler(HTTPException, http_error_handler)
+app.add_exception_handler(HTTPException, http_error_handler)
 
-    ```
+```
 
 ## http422_error_handler
 
 **Example:**
 
-    ```python
-    from fastapi.exceptions import RequestValidationError
-    from starlette.exceptions import HTTPException
-    from python_web_extras.fastapi.errors.validation_error import http422_error_handler
+```python
+from fastapi.exceptions import RequestValidationError
+from starlette.exceptions import HTTPException
+from python_web_extras.fastapi.errors.validation_error import http422_error_handler
 
-    app = FastAPI(__name__)
+app = FastAPI(__name__)
 
-    app.add_exception_handler(RequestValidationError, http422_error_handler)
+app.add_exception_handler(RequestValidationError, http422_error_handler)
 
     ```
 
