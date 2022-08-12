@@ -2,7 +2,7 @@
 
 [![Build and Publish](https://github.com/tarsil/python-web-extras/actions/workflows/main.yml/badge.svg)]((https://github.com/tarsil/python-web-extras/actions/workflows/main.yml/badge.svg))
 
-**Official Documentation** - <https://tarsil.github.io/python-web-extras/>
+**Official Documentation** - <https://python-web-extras.tarsild.io>
 
 ---
 
@@ -13,7 +13,7 @@
   - [About Python Web Extras](#about-python-web-extras)
   - [Tortoise ORM](#tortoise-orm)
     - [Overview](#overview)
-      - [Supported Python Versions](#supported-django-and-python-versions)
+      - [Supported Python Versions](#supported-python-versions)
     - [Installation](#installation)
   - [Documentation and Support](#documentation-and-support)
   - [License](#license)
@@ -63,7 +63,7 @@ pip install python-web-extras
 
 ## Documentation and Support
 
-Full documentation for the project is available at <https://tarsil.github.io/python-web-extras/>
+Full documentation for the project is available at <https://python-web-extras.tarsild.io>
 
 ## License
 

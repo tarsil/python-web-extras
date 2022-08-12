@@ -13,9 +13,8 @@
   - [About Python Web Extras](#about-python-web-extras)
   - [Tortoise ORM](#tortoise-orm)
     - [Overview](#overview)
-      - [Supported Python Versions](#supported-django-and-python-versions)
+      - [Supported Python Versions](#supported-python-versions)
     - [Installation](#installation)
-  - [Documentation and Support](#documentation-and-support)
   - [License](#license)
 
 ---
@@ -60,10 +59,6 @@ To install python-web-extras:
 ```shell
 pip install python-web-extras
 ```
-
-## Documentation and Support
-
-Full documentation for the project is available at <https://tarsil.github.io/python-web-extras/>
 
 ## License
 
